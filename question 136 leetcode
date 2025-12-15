@@ -1,0 +1,22 @@
+int singleNumber(int* nums, int numsSize) {
+    // METHOD 1 
+    // USING BITWISE OPERATOR
+    int answer=0;
+    for(int i=0;i<numsSize;i++){
+        answer=answer^nums[i];
+    }
+    return answer;
+    // xor of a^a =0 but the xor of a^0=0
+    
+    /*
+    method 2 
+    for(int i=1;i<numsSize;i++){
+        int d=0;
+        for(int j=0;j<numsSize;j++){
+            nums[i]==nums[j];
+            count++;
+        }
+    }
+    if(count==1) return nums[i];
+    */
+}
